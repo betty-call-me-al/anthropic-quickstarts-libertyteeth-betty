@@ -17,7 +17,7 @@ jobs:
     uses: ./.github/workflows/reusable_build_step.yaml
     with:
       platform: amd64
-      builder: ubuntu-latest-16core
+      builder: ubuntu-latest
       registry: ghcr.io/anthropics/anthropic-quickstarts-libertyteeth
       tag_prefix: computer-use-demo-
       context: computer-use-demo
@@ -28,7 +28,7 @@ jobs:
     uses: ./.github/workflows/reusable_build_step.yaml
     with:
       platform: arm64
-      builder: ubuntu-22.04-arm64-16core
+      builder: ubuntu-22.04-arm64
       registry: ghcr.io/anthropics/anthropic-quickstarts-libertyteeth
       tag_prefix: computer-use-demo-
       context: computer-use-demo
