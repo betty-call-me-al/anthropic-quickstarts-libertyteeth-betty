@@ -1,5 +1,5 @@
 env:
-  REGISTRY: ghcr.io/anthropics/anthropic-quickstarts-libertyteeth
+  REGISTRY: ghcr.io/libertyteeth/anthropic-quickstarts-libertyteeth
 name: build
 on:
   pull_request:
@@ -18,7 +18,7 @@ jobs:
     with:
       platform: amd64
       builder: ubuntu-latest
-      registry: ghcr.io/anthropics/anthropic-quickstarts-libertyteeth
+      registry: ghcr.io/libertyteeth/anthropic-quickstarts-libertyteeth
       tag_prefix: computer-use-demo-
       context: computer-use-demo
     permissions:
@@ -28,8 +28,8 @@ jobs:
     uses: ./.github/workflows/reusable_build_step.yaml
     with:
       platform: arm64
-      builder: ubuntu-22.04-arm64
-      registry: ghcr.io/anthropics/anthropic-quickstarts-libertyteeth
+      builder: ubuntu-latest-arm64
+      registry: ghcr.io/libertyteeth/anthropic-quickstarts-libertyteeth
       tag_prefix: computer-use-demo-
       context: computer-use-demo
     permissions:
