@@ -1,5 +1,5 @@
 env:
-  REGISTRY: ghcr.io/libertyteeth/anthropic-quickstarts-libertyteeth
+  REGISTRY: ghcr.io/betty-call-me-al/anthropic-quickstarts-libertyteeth-betty
 name: build
 on:
   pull_request:
@@ -18,7 +18,7 @@ jobs:
     with:
       platform: amd64
       builder: ubuntu-latest
-      registry: ghcr.io/libertyteeth/anthropic-quickstarts-libertyteeth
+      registry: ghcr.io/betty-call-me-al/anthropic-quickstarts-libertyteeth-betty
       tag_prefix: computer-use-demo-
       context: computer-use-demo
     permissions:
@@ -29,7 +29,7 @@ jobs:
 #     with:
 #       platform: arm64
 #       builder: ubuntu-latest
-#       registry: ghcr.io/libertyteeth/anthropic-quickstarts-libertyteeth
+#       registry: ghcr.io/betty-call-me-al/anthropic-quickstarts-libertyteeth-betty
 #       tag_prefix: computer-use-demo-
 #       context: computer-use-demo
 #     permissions:
